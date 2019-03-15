@@ -19,7 +19,7 @@
         <v-navigation-drawer app v-model="drawer" class="primary">  
             <v-layout column align-center>
                 <v-flex class="mt-5 mb-4">
-                    <Popup />
+                    <Popup @projectAdded="snackbar = true"/>
                 </v-flex>
             </v-layout>
             <v-list>

@@ -43,8 +43,10 @@ export default {
     methods: {
         submit(){
             if(this.$refs.form.validate()){
-                console.log(this.title, this.info)
+                //console.log(this.title, this.info)
+                this.$emit('projectAdded')
             }
+            
         }
     },
     computed: {
